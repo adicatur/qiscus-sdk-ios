@@ -405,6 +405,17 @@ Qiscus.addParticipant(onRoomId: "123", userIds: ["123"], onSuccess: { (qRoom) in
 Qiscus.removeParticipant(onRoom: "123", userIds: ["123"], onSuccess: { (qRoom) in }) { (userIds, id) in }
 ```
 
+### Get total unread count 
+
+```
+Qiscus.getAllUnreadCount(onSuccess: { (unread) in
+            print(" unread count " + "\(unread)")
+        }) { (error) in
+            print("error " + error)
+        }
+```
+
+
 ## Statuses
 
 ### Publish Start Typing
